@@ -22,7 +22,8 @@ export function momsDel(pris: number): number {
 
 // 3. Priset efter rabatt i procent. medRabatt(100, 10) ger 90.
 export function medRabatt(pris: number, procent: number): number {
-  // TODO
+  let rabattPris: number = pris * (100-procent) / 100;
+  return rabattPris;
 }
 
 // 4. Är kaféet öppet? Vardagar 7–18, helger (lördag, söndag) 9–16.
