@@ -16,7 +16,8 @@ export function formateraPris(pris: number): string {
 // 2. Momsdelen av ett pris med 12 % moms (fiktiv sats), avrundad till två decimaler.
 //    momsDel(112) ger 12.
 export function momsDel(pris: number): number {
-  // TODO
+  let moms: number = Math.round((pris * 0.12 / 1.12) * 100) / 100;
+  return moms;
 }
 
 // 3. Priset efter rabatt i procent. medRabatt(100, 10) ger 90.
