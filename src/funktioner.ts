@@ -79,7 +79,11 @@ export function största(tal: number[]): number | undefined {
 
 // 8. Upprepa en text. upprepa("ab", 3) ger "ababab". Använd en loop.
 export function upprepa(text: string, antal: number): string {
-  // TODO
+  let utskrift: string = "";
+  for (let rep = 0; rep < antal; rep++) {
+    utskrift += text;
+  }
+  return utskrift;
 }
 
 // 9. En kvittorad. kvittorad("Kaffe", 2, 32) ger "2 x Kaffe: 64 kr".
