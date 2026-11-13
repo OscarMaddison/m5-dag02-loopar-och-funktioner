@@ -68,7 +68,13 @@ export function snitt(tal: number[]): number {
 
 // 7. Det största talet, med en loop. största([3, 9, 4]) ger 9. Tom lista ger undefined.
 export function största(tal: number[]): number | undefined {
-  // TODO
+  let störst: number;
+  for (const pos of tal) {
+    if (störst === undefined || pos > störst) {
+      störst = pos;
+    }
+  }
+  return störst;
 }
 
 // 8. Upprepa en text. upprepa("ab", 3) ger "ababab". Använd en loop.
