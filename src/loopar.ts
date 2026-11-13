@@ -8,14 +8,19 @@ for (let i = 1; i <= 10; i++) {
 // UPPGIFT 2: skriv ut talen 10 till 1 (nedräkning) med en while-loop.
 //            Skriv "Kaffe!" efter 1.
 let i: number = 10;
-while (i >= 1){
+while (i >= 1) {
     console.log(i);
     i--;
 }
 
 // UPPGIFT 3: gör samma sak som uppgift 1, men skriv bara ut jämna tal.
 //            Tips: n % 2 === 0
-
+for (let i = 1; i <= 10; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+        i++;
+    }
+}
 
 // UPPGIFT 4: här är kaféets prislista. Skriv ut ett kvitto med en for...of-loop:
 //            "Kardemummabulle: 35 kr" osv, och sist "Summa: ... kr".
