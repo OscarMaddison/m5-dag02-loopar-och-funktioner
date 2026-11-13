@@ -55,7 +55,15 @@ export function summa(tal: number[]): number {
 
 // 6. Medelvärdet. snitt([2, 4, 6]) ger 4. Tom lista ger 0.
 export function snitt(tal: number[]): number {
-  // TODO
+  let total: number = 0;
+  for (const pos of tal) {
+    total += pos;
+  }
+  if (tal.length === 0) {
+    return 0;
+  } else {
+    return total / tal.length;
+  }
 }
 
 // 7. Det största talet, med en loop. största([3, 9, 4]) ger 9. Tom lista ger undefined.
