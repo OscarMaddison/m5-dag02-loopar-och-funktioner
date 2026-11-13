@@ -98,5 +98,5 @@ export const dubbla = (n: number): number => {
   return n * 2;
 };
 export const ärJämnt = (n: number): boolean => {
-  // TODO
+  return (n % 2 === 0);
 };
