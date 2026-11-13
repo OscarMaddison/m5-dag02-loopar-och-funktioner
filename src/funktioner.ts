@@ -95,7 +95,7 @@ export function kvittorad(namn: string, antal: number, pris: number): string {
 // 10. Pilfunktioner. Skriv dem själv med const och =>.
 //     dubbla(4) ger 8. ärJämnt(4) ger true.
 export const dubbla = (n: number): number => {
-  // TODO
+  return n * 2;
 };
 export const ärJämnt = (n: number): boolean => {
   // TODO
